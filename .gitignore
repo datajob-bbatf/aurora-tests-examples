@@ -16,3 +16,8 @@ dist/
 
 # Exclude
 !.vscode/launch.json
+
+# Project specific #
+
+# Folders
+.temp/

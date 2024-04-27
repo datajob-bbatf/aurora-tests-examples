@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "01_find_and_tap_icon",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "src/01_find_and_tap_icon/find_and_tap_icon.py",
+                "--config_file",
+                "src/01_find_and_tap_icon/config.json",
+                "--res_file",
+                "src/01_find_and_tap_icon/res_pixel_1080_2220/res.json"
+            ]
+        }
+    ]
+}
