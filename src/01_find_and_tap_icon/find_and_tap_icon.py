@@ -1,5 +1,4 @@
-import time
-from aurora_tests.pytest_fixtures.config_fixtures import resources, display, touches
+from aurora_tests.pytest.fixtures import resources, display, touches
 
 
 def test_find_and_tap_phone_icon(resources, display, touches):

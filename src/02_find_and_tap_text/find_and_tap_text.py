@@ -1,5 +1,4 @@
-import time
-from aurora_tests.pytest_fixtures.config_fixtures import display, touches
+from aurora_tests.pytest.fixtures import display, touches
 
 
 def test_find_and_tap_passwords_and_accounts(display, touches):
