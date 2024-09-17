@@ -6,6 +6,7 @@
     "configurations": [
         {
             "name": "01_find_and_tap_icon",
+            "python": "my_project_venv/bin/python",
             "type": "debugpy",
             "request": "launch",
             "module": "pytest",
@@ -22,6 +23,7 @@
         },
         {
             "name": "02_find_and_tap_text",
+            "python": "my_project_venv/bin/python",
             "type": "debugpy",
             "request": "launch",
             "module": "pytest",
