@@ -19,5 +19,9 @@ dist/
 
 # Project specific #
 
+# Files
+conftest.py
+
 # Folders
 .temp/
+failed_tests/

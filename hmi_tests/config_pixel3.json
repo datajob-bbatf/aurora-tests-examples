@@ -1,7 +1,8 @@
 {
+    "token": "",
     "Display": {
         "implementation": "AndroidDisplay",
-        "screen_cap_dir": "./.temp"
+        "screenshot_file": "./.temp/screenshot.png"
     },
     "Touches": {
         "implementation": "AndroidTouches"

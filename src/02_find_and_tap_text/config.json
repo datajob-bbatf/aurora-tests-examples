@@ -1,9 +1,0 @@
-{
-    "Display": {
-        "implementation": "AndroidDisplay",
-        "screen_cap_dir": "./.temp"
-    },
-    "Touches": {
-        "implementation": "AndroidTouches"
-    }
-}

@@ -1,28 +1,22 @@
-## Prerequisites
-1. Create Virtual Environment if needed (for example if Ubuntu OS):
-```
-python3 -m venv my_project_venv
-source my_project_venv/bin/activate
-```
-2. Install python packages:
-```
-pip install pytest tesserocr opencv-python pillow
-```
+## Intro
+This project provides examples of using the AuroraTests - HMI Black Box Testing Framework.
 
-## Install aurora_tests package
-```
-pip install aurora_tests-0.0.2-py3-none-any.whl
-```
+
+## Envoironment Setup
+To set up the environment, follow the "AuroraTests - Quick Start Guide".
 
 ## System Under Test (SUT)
-We uses Android on emulator as SUT, for runing it from the command line:
+This project uses the Android Pixel 3 emulator as the SUT. To launch the emulator from the command line, run:
 ```
 ~/Android/Sdk/emulator/emulator -avd Pixel_3a_API_34_extension_level_7_x86_64
 ```
-Also ADB must be installed:
+
+## How to run HMI Test
+To run an HMI test, such as [find_and_tap_icon.py](hmi_tests/src/01_find_and_tap_icon/find_and_tap_icon.py), use the following command from the `hmi_tests` folder:
 ```
-sudo apt install adb
+pytest src/01_find_and_tap_icon/find_and_tap_icon.py --config_file config_pixel3.json --res_file res_pixel3_1080_2220/res.json
 ```
 
-## Run example tests
-See coresponding README.md from desired exmple, for example: [./src/01_find_and_tap_icon/README.md](./src/01_find_and_tap_icon/README.md):
+## Debugging in VS Code
+
+The project includes a [launch.json](.vscode/launch.json) file with Visual Studio Code debug configurations. You can use this file to run and debug tests directly in VS Code.

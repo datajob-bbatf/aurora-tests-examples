@@ -12,13 +12,13 @@
             "module": "pytest",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/hmi_tests",
             "args": [
                 "src/01_find_and_tap_icon/find_and_tap_icon.py",
                 "--config_file",
-                "src/01_find_and_tap_icon/config.json",
+                "config_pixel3.json",
                 "--res_file",
-                "src/01_find_and_tap_icon/res_pixel_1080_2220/res.json"
+                "res_pixel3_1080_2220/res.json"
             ]
         },
         {
@@ -29,11 +29,11 @@
             "module": "pytest",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/hmi_tests",
             "args": [
                 "src/02_find_and_tap_text/find_and_tap_text.py",
                 "--config_file",
-                "src/02_find_and_tap_text/config.json",
+                "config_pixel3.json",
             ],
             "env": {
                 "TESSDATA_PREFIX": "/usr/share/tesseract-ocr/5/tessdata/"
