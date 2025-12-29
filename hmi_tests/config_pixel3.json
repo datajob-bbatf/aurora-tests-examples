@@ -6,5 +6,12 @@
     },
     "Touches": {
         "implementation": "AndroidTouches"
-    }
+    },
+    "LogMonitors": [
+        {
+            "name": "logcat",
+            "implementation": "DefaultLogMonitor",
+            "proc_cmd": "adb logcat -s AlarmClock"
+        }
+    ]
 }
