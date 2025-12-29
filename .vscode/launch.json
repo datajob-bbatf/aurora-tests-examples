@@ -38,6 +38,25 @@
             "env": {
                 "TESSDATA_PREFIX": "/usr/share/tesseract-ocr/5/tessdata/"
             }
+        },
+        {
+            "name": "03_monitor_logs - logcat",
+            "python": "my_project_venv/bin/python",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/hmi_tests",
+            "args": [
+                "-s",
+                "src/03_monitor_logs/monitor_logcat.py",
+                "--config_file",
+                "config_pixel3.json",
+            ],
+            "env": {
+                "TESSDATA_PREFIX": "/usr/share/tesseract-ocr/5/tessdata/"
+            }
         }
     ]
 }
