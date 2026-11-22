@@ -53,7 +53,7 @@ def test_alarm_clock_logcat_logs(display, touches, log_monitors):
         touches.tap(clock_icon.center())
 
         # Wait for app launch log entry
-        assert clock_app_started.event.wait(timeout=LOG_WAIT_TIMEOUT_S), \
+        assert clock_app_started.wait(timeout=LOG_WAIT_TIMEOUT_S), \
             f"Expected log message with '{clock_app_started.keyword}' not received"
 
         print(f"Received log: {clock_app_started.line}")
